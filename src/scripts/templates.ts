@@ -68,7 +68,7 @@ const templates = {
   ): HTMLDivElement {
     return Object.assign(document.createElement('div'), {
       className: placeholder,
-      innerHTML: value,
+      innerText: value,
     });
   },
 
@@ -97,7 +97,7 @@ const templates = {
   ): HTMLDivElement {
     const div = Object.assign(document.createElement('div'), {
       className: item,
-      innerHTML: label,
+      innerText: label,
     });
 
     Object.assign(div.dataset, {
@@ -131,7 +131,7 @@ const templates = {
       const removeButton = Object.assign(document.createElement('button'), {
         type: 'button',
         className: button,
-        innerHTML: REMOVE_ITEM_TEXT,
+        innerText: REMOVE_ITEM_TEXT,
       });
       removeButton.setAttribute(
         'aria-label',
@@ -187,7 +187,7 @@ const templates = {
     div.appendChild(
       Object.assign(document.createElement('div'), {
         className: groupHeading,
-        innerHTML: value,
+        innerText: value,
       }),
     );
 
@@ -225,7 +225,7 @@ const templates = {
   ): HTMLDivElement {
     const div = Object.assign(document.createElement('div'), {
       id: elementId,
-      innerHTML: label,
+      innerText: label,
       className: `${item} ${itemChoice}`,
     });
 
